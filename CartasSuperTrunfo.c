@@ -8,7 +8,7 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
   int populacao1, numero_pontos_turisticos1, populacao2, numero_pontos_turisticos2;
-  float area_cidade1, pib1, area_cidade2, pib2, densidade_populacional1 = 0, densidade_populacional2 = 0, pib_per_capita1 = 0, pib_per_capita2 = 0;
+  float super_poder1, super_poder2, area_cidade1, pib1, area_cidade2, pib2, densidade_populacional1 = 0, densidade_populacional2 = 0, pib_per_capita1 = 0, pib_per_capita2 = 0;
   char estado1, codigo_carta1[20], nome_cidade1[50], estado2, codigo_carta2[20], nome_cidade2[50];
   
   // Área para entrada de dados
@@ -43,7 +43,9 @@ int main() {
 
   densidade_populacional1 = populacao1/area_cidade1;
   pib_per_capita1 = pib1/populacao1;
+  super_poder1 = ( (float) populacao1 + area_cidade1 + pib1 + (float) numero_pontos_turisticos1 + pib_per_capita1 - densidade_populacional1 );
 
+  printf ("O super poder da carta 1 é %f", super_poder1)
   // Solicitação dos dados da segunda carta
 
   printf("\nAgora serao requisitados os dados da segunda carta.\n");
