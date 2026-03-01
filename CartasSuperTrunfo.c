@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
@@ -7,7 +8,8 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   
-  int populacao1, numero_pontos_turisticos1, populacao2, numero_pontos_turisticos2;
+  int numero_pontos_turisticos1, numero_pontos_turisticos2;
+  unsigned long int populacao1, populacao2;
   float super_poder1, super_poder2, area_cidade1, pib1, area_cidade2, pib2, densidade_populacional1 = 0, densidade_populacional2 = 0, pib_per_capita1 = 0, pib_per_capita2 = 0;
   char estado1, codigo_carta1[20], nome_cidade1[50], estado2, codigo_carta2[20], nome_cidade2[50];
   
@@ -38,6 +40,8 @@ int main() {
 
   printf("\nDigite o numero de pontos turisticos da cidade da primeira carta: ");
   scanf(" %i", &numero_pontos_turisticos1);
+
+  printf("\n\n");
 
   // Calculando densidade populacional, super poder e pib per capita da carta 1
 
@@ -70,6 +74,8 @@ int main() {
 
   printf("\nDigite o numero de pontos turisticos da cidade da segunda carta: ");
   scanf(" %i", &numero_pontos_turisticos2);
+
+  printf("\n\n");
 
   // Calculando densidade populacional, super poder e pib per capita da carta 2
 
