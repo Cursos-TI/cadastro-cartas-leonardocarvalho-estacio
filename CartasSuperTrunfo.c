@@ -45,7 +45,8 @@ int main() {
   pib_per_capita1 = pib1/populacao1;
   super_poder1 = ( (float) populacao1 + area_cidade1 + pib1 + (float) numero_pontos_turisticos1 + pib_per_capita1 - densidade_populacional1 );
 
-  printf ("O super poder da carta 1 é %f", super_poder1)
+  printf ("O super poder da carta 1 é %f", super_poder1);
+  printf ("teste")
   // Solicitação dos dados da segunda carta
 
   printf("\nAgora serao requisitados os dados da segunda carta.\n");
@@ -53,7 +54,7 @@ int main() {
   printf("\nDigite o Estado da segunda carta: ");
   scanf(" %c", &estado2);
 
-  printf("\nDigite o codigo da segunda carta: ");
+  printf("\nDigite o codigo da segunda carta: "); 
   scanf(" %s", &codigo_carta2);
   getchar();
 
